@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        * {
+            box-sizing: border-box;
+            width: 500px;
+            border: 1px solid blue;
+        }
+        .main-brand-3.title-3 {
+            color:red;
+        }
+
+        .title-3 {
+            color: green;
+        }
+
+        /* .first-child-exmaple {
+            color: blueviolet;
+        } */
+        /* https://developer.mozilla.org/en-US/docs/Web/CSS/:first-child */
+        .first-child-example:first-child {
+            color: limegreen;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Web Dev</title>
+</head>
+<body>
+    <table>
+            <!-- <tr>tr is a table row</tr> -->
+            <!-- <td>td is one cell within the row</td> -->
+            <!-- id is the only one of those on your website, great for in page links-->
+            <!-- class is common practice -->
+            <!-- In most case, CSS parent will permeate all the the children inside -->
+            <tr>
+                <div>
+                    <span>A container of small text</span>
+                </div>
+                <div>
+                    <button>A button can be responded to Javascript</button>
+                </div>
+                <div>
+                    <input placeholder="enter text" type="text"/>
+                    <input type="number"/>
+                    <input  type="file"/>
+                    <input type="color" value='000000'>
+                </div>
+                <div>
+                    <textarea>hello world</textarea>
+                </div>
+                <div>
+                    <select>
+                        <option>option 1</option>
+                        <option>optino 2</option>
+                    </select>
+                </div>
+                <div>
+                    <form>hello world</form>
+                </div>
+            </tr>
+        </table>
+
+        <h1 class='title-3 main-brand-3'> Most matched CSS wins</h1>
+        <h1 class='title-3'> I am green</h1>
+        <ol>
+            <li class="first-child-example">First</li>
+            <li class="first-child-emample">second</li>
+        </ol>
+</body>
+</html>
