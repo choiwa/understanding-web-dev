@@ -1,3 +1,4 @@
+// https://btholt.github.io/intro-to-web-dev-v2/dom/
 const changeColor = document.querySelector('.red-square');
 changeColor.addEventListener("click", function() {
     changeColor.style.backgroundColor = 'limegreen';
