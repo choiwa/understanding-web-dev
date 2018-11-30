@@ -1,0 +1,15 @@
+.navBar {
+    display: flex;
+    flex-direction: row;
+}
+
+.navBox {
+    border: 1px solid palevioletred;
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    /* align-content: center; */
+    font-size: 2em;
+    padding: 0.5em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
