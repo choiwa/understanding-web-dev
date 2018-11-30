@@ -1,4 +1,5 @@
 // https://btholt.github.io/intro-to-web-dev-v2/dom/
+// https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener
 const changeColor = document.querySelector('.red-square');
 changeColor.addEventListener("click", function() {
     changeColor.style.backgroundColor = 'limegreen';
@@ -13,5 +14,9 @@ const changeList = document.querySelectorAll('.list-change');
 
 const getInnerText = document.querySelector('.get-inner-text')
 getInnerText.addEventListener('click', function(event) {
-    console.log(`You have clicked ${event.target.innerText}`);
+    if (event.target.tagName === 'button') {
+        console.log(`You have clicked ${event.target.innerText}`);
+    }
+
+    event.stopPropagation();
 })
