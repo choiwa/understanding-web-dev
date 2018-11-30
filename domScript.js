@@ -9,3 +9,8 @@ const changeList = document.querySelectorAll('.list-change');
 
         currentEle.innerText = "modified by Javascript";
     }
+
+const getInnerText = document.querySelector('.get-inner-text')
+getInnerText.addEventListener('click', function(event) {
+    console.log(`You have clicked ${event.target.innerText}`);
+})
