@@ -38,6 +38,12 @@
     align-items: center;
 }
 
+.red-square {
+    width: 100px;
+    height: 100px;
+    background-color: blueviolet;
+}
+
 a {
     text-decoration: none;
 }
