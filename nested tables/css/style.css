@@ -1,0 +1,14 @@
+table {
+  border: solid #000080;
+/*   justify-content: space-evenly; */
+/*   text-align: justify; */
+}
+
+td {
+  border: 1px solid #00FF00;
+  text-align: center;
+}
+
+th {
+  border: 1px solid;
+}
