@@ -33,7 +33,7 @@ a:visited {
   <tr>
     <td><table width="700" border="0" cellspacing="0" cellpadding="0" align="center" height="400px">
         <tr> 
-          <!--2. using inline css--> 
+          
           <!--it repeats, doens't allow for resizing or positioning--> 
           <!--make sure set full back color by using background-color-->
           <td align="center" style="font-size: 30px; color: darkred;font-family: Arial, sans-serif;background-image: url('http://images.harmony.epsilon.com/ContentHandler/images/de0a3226-d396-4c2c-b3a8-3ede2f831505/images/190926_Makeup_Masters_mid_banner.jpg'); background-repeat: no-repeat;background-size: cover; background-color: antiquewhite">hello inline css</td>
@@ -42,11 +42,30 @@ a:visited {
   </tr>
   <tr>
     <td><table width="700" border="0" cellspacing="0" cellpadding="0" align="center" height="400px">
-        <tr>
-          <!--3. using embedded css--> 
+        <tr> 
+          <!--3. using embedded css-->
           <td align="center" class="bgImage">hello embedded CSS</td>
         </tr>
       </table></td>
+  </tr>
+  <tr> 
+    <!--2. using bulletproof background image--> 
+    <!--https://backgrounds.cm/--> 
+    <!--with Microsoft’s Vector Markup Language (VML) to ensure that background images are displayed nearly everywhere-->
+    <table width="700" border="0" cellspacing="0" cellpadding="0" align="center" height="350px">
+      <tr>
+        <td align="center" background="http://images.harmony.epsilon.com/ContentHandler/images/de0a3226-d396-4c2c-b3a8-3ede2f831505/images/190924_Holiday_Preview_1_bottom_banner_v2.jpg" bgcolor="#7bceeb" width="700" height="350" style="font-size: 30px; color: coral"><!--[if gte mso 9]>
+  <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:120px;height:92px;">
+    <v:fill type="tile" src="http://images.harmony.epsilon.com/ContentHandler/images/de0a3226-d396-4c2c-b3a8-3ede2f831505/images/190924_Holiday_Preview_1_bottom_banner_v2.jpg" color="#7bceeb" />
+    <v:textbox inset="0,0,0,0">
+  <![endif]--> 
+          bulletproof background image 
+          <!--[if gte mso 9]>
+    </v:textbox>
+  </v:rect>
+  <![endif]--></td>
+      </tr>
+    </table>
   </tr>
 </table>
 <table align="center" border="0" cellpadding="0" cellspacing="0" width="700">
