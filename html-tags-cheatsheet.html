@@ -16,10 +16,15 @@
 
     table {
       border-collapse: collapse;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
     }
 
     #backgroundColor {
       background-color: rgba(45, 45, 45, 0.1);
+    }
+
+    #thumbnail {
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
     }
   </style>
 </head>
@@ -48,6 +53,20 @@
       <td>css - background-color: rgba(45, 45, 45, 0.1);</td>
       <td>
         <div id='backgroundColor'>hello world</div>
+      </td>
+    </tr>
+    <tr>
+      <td>box-shadow</td>
+      <td>The box-shadow property takes values for
+
+        offset-x (how far to push the shadow horizontally from the element),
+        offset-y (how far to push the shadow vertically from the element),
+        blur-radius,
+        spread-radius and
+        color, in that order.
+        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);</td>
+      <td>
+        <div id='thumbnail'>hello world</div>
       </td>
     </tr>
   </table>
