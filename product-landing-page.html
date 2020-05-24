@@ -1,0 +1,77 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<style>
+  #logo {
+    font-family: Impact, Charcoal, sans-serif;
+    font-size: 60px;
+  }
+
+  #header {
+    display: flex;
+  }
+
+  nav > ul {
+    /*   display: inline;
+padding: 1em; */
+    display: flex;
+    flex-direction: row;
+    padding: 1em;
+  }
+
+  .nav-link {
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  li {
+    font-family: Impact, Charcoal, sans-serif;
+    list-style-type: none;
+    padding: 1em;
+    text-align: center;
+  }
+
+  @media (max-width: 800px) {
+    nav > {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+</style>
+<div class="container">
+  <header id="header">
+    <img
+      id="header-img"
+      alt="oe plus"
+      src="https://s3.amazonaws.com/freecodecamp/original_trombones.png"
+      width="400px"
+      style="display: none;"
+    />
+    <div id="logo">OE Plus</div>
+    <nav id="nav-bar">
+      <ul>
+        <li><a href="#aboutus" class="nav-link">about us</a></li>
+        <li>
+          <a href="#appointment" class="nav-link">appointment or inquiry</a>
+        </li>
+        <li><a href="#works" class="nav-link">what are we working on</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div id="aboutus">about us</div>
+  <div id="appointment">appointment or inquiry</div>
+  <div id="works">what are we working on</div>
+  <iframe src="https://youtu.be/y8Yv4pnO7qc" id="video"></iframe>
+  <form id="form" action="https://www.freecodecamp.com/email-submit">
+    <label for="email"
+      >please subscribe and we will get your the latest news!</label
+    >
+    <input
+      type="email"
+      id="email"
+      placeholder="please enter email"
+      name="email"
+    />
+    <input type="submit" value="Submit" id="submit" />
+  </form>
+</div>
