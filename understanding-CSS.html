@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      @charset "UTF-8";
+      /* CSS Document */
+
+      p {
+        background: green;
+        background: orange; /*this will be used*/
+      }
+      .parent .child {
+        background: yellow; /*this will find child with the parent tag*/
+      }
+      input[type="text"] {
+        /*input type is text*/
+        background: purple;
+      }
+    </style>
+    <meta charset="UTF-8" />
+    <title>dummy store</title>
+  </head>
+
+  <body>
+    <p>hello world</p>
+    <div class="parent">
+      <div class="child">im child</div>
+    </div>
+    <div class="child">im child without parent</div>
+    <input type="text" />
+  </body>
+</html>
