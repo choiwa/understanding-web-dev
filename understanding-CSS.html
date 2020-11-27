@@ -25,6 +25,14 @@
       .one > .two { /*find the children no nested elements*/
           color:darkorange;
       }
+
+      #beforeafter::before {
+          content: "insert before ";
+      }
+
+      #beforeafter::after {
+          content: " add after the element"
+      }
     </style>
     <meta charset="UTF-8" />
     <title>dummy store</title>
@@ -53,5 +61,6 @@
            <div class="two">not immediate child because this is nested</div>
         </div>
     </div>
+    <div id="beforeafter">some content</div>
   </body>
 </html>
