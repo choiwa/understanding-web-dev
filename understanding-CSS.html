@@ -9,8 +9,8 @@
         background: green;
         background: orange; /*this will be used*/
       }
-      .parent .child {
-        background: yellow; /*this will find child with the parent tag*/
+      .parent .child { /*this will find children with the parent tag, nested as well*/
+        background: yellow; 
       }
       input[type="text"] {
         /*input type is text*/
@@ -20,6 +20,10 @@
       .iamclass {
           text-align: center;
           line-height:.5em; /*em relative to the font-size*/
+      }
+
+      .one > .two { /*find the children no nested elements*/
+          color:darkorange;
       }
     </style>
     <meta charset="UTF-8" />
@@ -34,11 +38,20 @@
     <p>hello world</p>
     <div class="parent">
       <div class="child">im child</div>
-      <div class="child">im child too</div>
+      <div>
+          <div class="child">im child too</div>
+        </div>
     </div>
     <div class="child">im child without parent</div>
     <input type="text" />
     
-    
+    <div class="one">
+        <div class="two">immediate child</div>
+    </div>
+    <div class="one">
+       <div>
+           <div class="two">not immediate child because this is nested</div>
+        </div>
+    </div>
   </body>
 </html>
